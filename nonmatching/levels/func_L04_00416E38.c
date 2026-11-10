@@ -73,7 +73,7 @@
  * (2) the colour 0x80F0F0F0 is passed sign-extended (lui/ori): a 32-bit int value (here a local
  * int), not a 64-bit constant; (3) wrapping each rounding in do { } while (0) (macro below)
  * gives retail's whole first and third groups: the loop notes act as scheduler barriers.
- * Whether such a wrapper is admissible is the open question in docs/MATCHING-BLOCKERS.md
+ * Whether such a wrapper is admissible is the open question in docs/contributing/matching-blockers.md
  * ("A non-empty do { ... } while (0) as a block barrier"); this is the same family as
  * func_0033A520 (a block boundary after a scale-and-round) and func_L04_00417028.
  *

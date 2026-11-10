@@ -11,7 +11,7 @@
  * then takes a pad nop at +0x194 instead; past that point the bytes agree again.
  * No C wording can change it: the slot must stay a nop and mtc1 a0,f0 must follow,
  * so gas sees exactly the exempted history. Retail is a counterexample to the
- * exemption (docs/COMPILER-NOTES.md "Transfer hazards": 4 of 8 first-transfer
+ * exemption (docs/build/compiler-notes.md "Transfer hazards": 4 of 8 first-transfer
  * witnesses need the nop). It matches if the assembler emits that nop.
  * What fixed the rest (vs the 604-byte sol-high draft): a separate counter for the
  * case-1/2 loop (sharing `i` with the case-0 loop made it cross a call, so sched1

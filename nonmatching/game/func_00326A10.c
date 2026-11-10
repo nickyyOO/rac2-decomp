@@ -22,7 +22,7 @@
  * Draws the HUD timer: two labels from the text table, then the time split into three
  * fields, formatted and drawn centred, scaled by the HUD scale at 0x1B23A4.
  *
- * Blocked on "A register saved and never used" (docs/MATCHING-BLOCKERS.md): retail
+ * Blocked on "A register saved and never used" (docs/contributing/matching-blockers.md): retail
  * saves $s0 and never uses it (frame 0xA0, $s1 holds 0x8710). Here the frame is 0x90
  * and the constant gets $s0. The second difference is the 454.0 x position: retail
  * loads it into $f12 before each call, cc1 keeps it in a sixth callee-saved float

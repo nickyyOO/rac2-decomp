@@ -24,7 +24,7 @@
  * - `do { qcopy(...); } while (0); i--;` in an explicit do/while counter: the LOOP_END note
  *   makes the decrement a barrier, and it reaches retail's slot. 552 bytes: the note also
  *   ends cse1's block, so 0.0f/1.0f stop being shared and -gravity is hoisted. Non-empty
- *   wrappers are an open maintainer question (MATCHING-BLOCKERS.md), so not pursued.
+ *   wrappers are an open maintainer question (matching-blockers.md), so not pursued.
  * Reopen with: a non-volatile reason the decrement directly follows the copy (the loads
  * must not be ready in the copy's next cycle), or evidence that this record is volatile.
  */

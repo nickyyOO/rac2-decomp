@@ -33,7 +33,7 @@
    assembler expands the reference to a lui/addiu pair instead.
 
    Tried: `while` with `continue`, `while` with `if/else`, `for(;;)` with the
-   `if (...) goto body;` recipe from docs/COMPILER-NOTES.md, a goto to the
+   `if (...) goto body;` recipe from docs/build/compiler-notes.md, a goto to the
    loop condition, and a local copy of the flag byte.  The frame, the load
    count and the body shape are right in every spelling; the likely bits and
    the register allocation are not.
